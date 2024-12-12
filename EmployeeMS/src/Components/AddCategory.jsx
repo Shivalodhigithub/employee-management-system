@@ -13,7 +13,7 @@ const AddCategory = () => {
     
     const handleSubmit=(event)=>{
         event.preventDefault();
-        axios.post('http://localhost:3000/auth/category',{category}).then((result) => {
+        axios.post('https://employee-management-system-e3di.onrender.com/auth/category',{category}).then((result) => {
             console.log(result)
             SetCategory({
               categoryName:'',
