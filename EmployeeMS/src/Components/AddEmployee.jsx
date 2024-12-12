@@ -49,7 +49,7 @@ const AddEmployee = () => {
       formData.append('image',employee.image)
       formData.append('category_id',employee.category_id)
        
-      axios.post('http://localhost:3000/auth/empolyee', formData).then((result) => {
+      axios.post('https://employee-management-system-e3di.onrender.com/auth/empolyee', formData).then((result) => {
         console.log(result)
         if(result.data.Status){
           navigate('/dashboard/employee')
