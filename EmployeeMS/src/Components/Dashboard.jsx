@@ -9,7 +9,7 @@ const Dashboard = () => {
   const navigate=useNavigate();
   // axios.defaults.withCredentials=true;
   const handleLogOut=()=>{
-    axios.get('http://localhost:3000/auth/adminlogout').then((result) => {
+    axios.get('https://employee-management-system-e3di.onrender.com/auth/adminlogout').then((result) => {
       if(result.data.Status){
         localStorage.removeItem("valid")//protected route
         navigate('/')
