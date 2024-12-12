@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.loginPage{
+    background: url('/Images/landing-img.jpeg');
+    background: linear-gradient(rgba(11,11,11,0.5) , rgba(10,10,10,0.5) , url('/Images/landing-img.jpeg'));
+
+}
+.loginForm{
+    background-color: rgba(1, 32, 9.3, 0.6);
+    color: white;
+}
+.dashboard{
+    background-color: rgb(21 63 105) !important;
+}
+.emp-navbar{
+    background-color: rgb(21 63 105) !important;
+}
+
+.emp-navbar ul li a{
+     color: white;
+      
+}
+.navbar-brand{
+    color: darkgray;
+}
+.emp_img{
+    height: 380px;
+    width: 380px;
+    border-radius: 100%;
+}
+.form-div{
+    border-radius: 15px;
+    border: 2px solid #adadcc;
+    
+    /* width: 30rem; */
+}
+
+.div-1{
+    background-color:#8fddd9;;
+
+}
+
+.div-2{
+    background-color: violet;
+
+}
+
+.div-3{
+    background-color: antiquewhite;
+
+}
+
+/* Media Queries for Responsive Design */
+/* .custom-width {
+  width: 75%;
+}
+
+@media (min-width: 992px) {
+  .custom-width {
+    width: 25%;
+  }
+} */
+
+
+/* General table styling for mobile */
+@media (max-width: 768px) {
+
+    .table {
+      font-size: 14px;
+      /* background-color: red; */
+    }
+  
+    .table th, .table td {
+      padding: 8px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* Small screens (max-width: 576px) */
+  @media (max-width: 576px) {
+    .table {
+      font-size: 12px;
+    }
+  
+    .table th, .table td {
+      padding: 6px;
+    }
+  
+    .btn {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  
+    .table-responsive {
+      overflow-x: auto;
+    }
+  
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .btn {
+      margin: 2px;
+    }
+  }
+  
+  /* Extra small screens (max-width: 400px) */
+  @media (max-width: 400px) {
+    .table {
+      font-size: 10px;
+    }
+  
+    .btn {
+      font-size: 9px;
+      padding: 2px 6px;
+    }
+  
+    .d-flex {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 5px;
+    }
+  
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+
