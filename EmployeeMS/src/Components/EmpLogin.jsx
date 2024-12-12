@@ -19,7 +19,7 @@ const EmpLogin = () => {
         event.preventDefault();
 
         // console.log(values)
-        axios.post('http://localhost:3000/auth/empolyeelogin', values).then((result) => {
+        axios.post('https://employee-management-system-e3di.onrender.com/auth/empolyeelogin', values).then((result) => {
             console.log(result.data)
             if(result.data.Status){
                  
