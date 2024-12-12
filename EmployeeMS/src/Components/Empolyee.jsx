@@ -37,7 +37,7 @@ const Employee = () => {
 
   const deleteEmp = (_id) => {
     axios
-      .delete('http://localhost:3000/auth/employee/' + _id)
+      .delete('https://employee-management-system-e3di.onrender.com/auth/employee/' + _id)
       .then((result) => {
         if (result.data.Status) {
           window.location.reload(); // Reload the page
