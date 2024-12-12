@@ -20,8 +20,8 @@ const Login = () => {
     event.preventDefault();
 
     // console.log(values)
-    axios.post('http://localhost:3000/auth/adminlogin', values).then((result) => {
-      console.log(result.data)
+    axios.post('https://employee-management-system-e3di.onrender.com/auth/adminlogin', values).then((result) => {
+      // console.log(result.data)
       if (result.data.loginStatus) {
         // toast.success('Suceesfully login')
         localStorage.setItem("valid", true);
