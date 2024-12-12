@@ -32,7 +32,7 @@ const EditEmployee = () => {
         console.log(err)
       });
        
-      axios.get('http://localhost:3000/auth/employee/'+_id).then((result) => {
+      axios.get('https://employee-management-system-e3di.onrender.com/auth/employee/'+_id).then((result) => {
         // console.log(result)
          
         SetEmployee({
@@ -55,7 +55,7 @@ const navigate=useNavigate()
     const handleForm=(event)=>{
         event.preventDefault();
          
-        axios.put('http://localhost:3000/auth/employee/'+_id,employee).then((result) => {
+        axios.put('https://employee-management-system-e3di.onrender.com/auth/employee/'+_id,employee).then((result) => {
             // console.log(result)
             if(result.data.Status){
               navigate('/dashboard/employee')
