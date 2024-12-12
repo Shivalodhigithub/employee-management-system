@@ -12,7 +12,7 @@ const Home = () => {
 
   },[])
   const totalEmp=()=>{
-    axios.get('http://localhost:3000/auth/employee_cnt').then((result) => {
+    axios.get('https://employee-management-system-e3di.onrender.com/auth/employee_cnt').then((result) => {
       // console.log(result)
       SetCountEmp(result.data.count)
     }).catch((err) => {
@@ -21,7 +21,7 @@ const Home = () => {
   }
 
   const totalAdmin=()=>{
-    axios.get('http://localhost:3000/auth/adminlogin_cnt').then((result) => {
+    axios.get('https://employee-management-system-e3di.onrender.com/auth/adminlogin_cnt').then((result) => {
       // console.log(result)
       SetCntAdmin(result.data.count)
     }).catch((err) => {
@@ -30,7 +30,7 @@ const Home = () => {
   }
 
   const totalSal=()=>{
-    axios.get('http://localhost:3000/auth/employee_cntsalary').then((result) => {
+    axios.get('https://employee-management-system-e3di.onrender.com/auth/employee_cntsalary').then((result) => {
       // console.log(result)
       SettotalSalary(result.data.totalSalary)
     }).catch((err) => {
