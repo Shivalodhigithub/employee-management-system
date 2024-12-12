@@ -18,7 +18,7 @@ const LeaveEmployee = () => {
      
     e.preventDefault();
     // console.log(`/employeedetails/${_id}/leave`)
-    axios.post(`http://localhost:3000/employeedetails/${_id}/leave`,{ startDate, endDate, reason }).then((result) => {
+    axios.post(`https://employee-management-system-e3di.onrender.com/employeedetails/${_id}/leave`,{ startDate, endDate, reason }).then((result) => {
       console.log(result)
       if(result.data.Status){
         alert("Sent Leave Request")
