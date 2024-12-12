@@ -8,8 +8,8 @@ const Category = () => {
   const [catData, SetcatData] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3000/auth/category').then((result) => {
-      console.log(result)
+    axios.get('https://employee-management-system-e3di.onrender.com/auth/category').then((result) => {
+      // console.log(result)
       if (result.data.Status) {
         SetcatData(result.data.categories)
 
