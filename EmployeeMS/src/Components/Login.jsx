@@ -148,4 +148,30 @@ const Login = () => {
                               />
                             </div>
                           </form>
-                        </div
+                        </div>
+                        <div className="modal-footer">
+                          <button
+                            type="button"
+                            className="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" className="btn btn-primary">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Login;
