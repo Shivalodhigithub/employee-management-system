@@ -14,7 +14,7 @@ exports.signUp=(req,res)=>{
         const dataObj={
             name:req_body.name,
             email:req_body.email,
-            password:bcrypt.hash(req.req_body.password,8),
+            password:bcrypt.hash(req_body.password,8),
             mobile:req_body.mobile
         }
 
