@@ -14,7 +14,7 @@ const Employee = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/auth/empolyee')
+      .get('https://employee-management-system-e3di.onrender.com/auth/empolyee')
       .then((result) => {
         if (result.data.Status) {
           setEmp(result.data.empdata);
