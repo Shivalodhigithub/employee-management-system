@@ -8,7 +8,7 @@ const Navbar = ({ empdata ,_id }) => {
   console.log(_id)
   const navigate=useNavigate()
   const handleLogOut=()=>{
-    axios.get('http://localhost:3000/auth/employeelogout').then((result) => {
+    axios.get('https://employee-management-system-e3di.onrender.com/auth/employeelogout').then((result) => {
       console.log(result)
       if(result.data.Status){
         // localStorage.removeItem("valid")//protected route
