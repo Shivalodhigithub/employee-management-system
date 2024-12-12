@@ -12,7 +12,7 @@ const LeaveDetails = () => {
   const [show2, SetShow2] = useState(false)
   
   useEffect(() => {
-    axios.get('http://localhost:3000/auth/leave').then((result) => {
+    axios.get('https://employee-management-system-e3di.onrender.com/auth/leave').then((result) => {
       console.log(result)
       SetleaveData(result.data.leaveData);
     }).catch((err) => {
