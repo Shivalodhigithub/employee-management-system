@@ -8,7 +8,7 @@ const EmpInfo = () => {
     const [emp,SetEmp]=useState([])
     console.log(_id)
     useEffect(()=>{
-        axios.get('http://localhost:3000/auth/employee/'+_id).then((result) => {
+        axios.get('https://employee-management-system-e3di.onrender.com/auth/employee/'+_id).then((result) => {
             console.log(result)
             SetEmp(result.data.empdata)
         }).catch((err) => {
