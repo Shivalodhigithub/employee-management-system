@@ -82,7 +82,7 @@ const Employee = () => {
                   <td>{val.name}</td>
                   <td className="text-center">
                     <img
-                      src={'http://localhost:3000/Images/' + val.img}
+                      src={'https://employee-management-system-e3di.onrender.com/Images/' + val.img}
                       alt=""
                       className="img-fluid"
                       style={{
