@@ -8,7 +8,7 @@ const upload=require('../middle_ware/multer.middle_ware')
 const multer=require('multer')
  
 module.exports=(app)=>{
-    app.post('/auth/empolyee',empController.createEmp)
+    app.post('/auth/empolyee',[upload.single('image')],empController.createEmp)
     app.post('/auth/empolyeelogin',empController.empLogin)
     app.get('/auth/empolyee', empController.getEmp)
     app.get('/auth/employee/:_id', empController.getSingleEmp)
