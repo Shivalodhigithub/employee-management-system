@@ -11,7 +11,7 @@ const AddEmployee = () => {
         password:'',
         salary:'',
         address:'',
-        
+        image:'',
         category_id:''
     })
     const [catData, SetcatData] = useState([])
@@ -46,7 +46,7 @@ const AddEmployee = () => {
       formData.append('password',employee.password)
       formData.append('salary',employee.salary)
       formData.append('address',employee.address)
-       
+      formData.append('image',employee.image)
       formData.append('category_id',employee.category_id)
        
       axios.post('http://localhost:3000/auth/empolyee', formData).then((result) => {
@@ -93,7 +93,10 @@ const AddEmployee = () => {
     <input type="text" class="form-control" id="exampleInputAddress" onChange={(e)=>SetEmployee({...employee , address:e.target.value})}/>
   </div>
    
-   {/* images  */}
+  <div class="mb-3">
+    <label for="exampleInputImage" class="form-label">Select Image</label>
+    <input type="file" name='image' class="form-control" id="exampleInputImage" onChange={(e)=>SetEmployee({...employee , image:e.target.files[0]})}/>
+  </div>
   <div class="mb-3">
     <label for="exampleInputCategory" class="form-label">Select Category</label>
     <select name="category" id="category" className='form-select' onChange={(e)=>SetEmployee({...employee , category_id:e.target.value})}>
