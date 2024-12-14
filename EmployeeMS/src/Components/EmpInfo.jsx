@@ -36,7 +36,7 @@ const EmpInfo = () => {
              {/* <p>{emp.category}</p> */}
             </div>
             <div className="col-5">
-            <img src={"http://localhost:3000/Images/"+emp.img} alt="" className=' img-thumbnail img-fluid emp_img' style={emp_img} />
+            <img src={"https://employee-management-system-e3di.onrender.com/Images/"+emp.img} alt="" className=' img-thumbnail img-fluid emp_img' style={emp_img} />
 
             </div>
           </div>
