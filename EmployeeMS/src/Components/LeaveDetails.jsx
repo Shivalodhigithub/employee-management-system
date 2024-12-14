@@ -105,7 +105,7 @@ const RequestLeave = ({ leave, index }) => {
   // const {_id}=useParams();
   const Accept = (_id) => {
 
-    axios.put('http://localhost:3000/auth/leave/' + _id, { status: 'approved' }).then((result) => {
+    axios.put('https://employee-management-system-e3di.onrender.com/auth/leave/' + _id, { status: 'approved' }).then((result) => {
       console.log(result)
       if (result.data.Status) {
         toast.success('Approved request', { autoClose: 3000, theme: 'colored' })
@@ -122,7 +122,7 @@ const RequestLeave = ({ leave, index }) => {
   }
 
   const Reject = (_id) => {
-    axios.put('http://localhost:3000/auth/leave/' + _id, { status: 'rejected' }).then((result) => {
+    axios.put('https://employee-management-system-e3di.onrender.com/auth/leave/' + _id, { status: 'rejected' }).then((result) => {
       console.log(result)
       if (result.data.Status) {
         toast.success('Deny Leave request', { autoClose: 3000, theme: 'colored',position:'top-center' })
