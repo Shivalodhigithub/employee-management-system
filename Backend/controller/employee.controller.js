@@ -21,7 +21,6 @@ exports.createEmp=async(req,res)=>{
             password:bcrypt.hashSync(req_body.password,8),
             salary:req_body.salary,
             address:req_body.address,
-            img:req.file.filename,
             category:req_body.category_id
         }
 
