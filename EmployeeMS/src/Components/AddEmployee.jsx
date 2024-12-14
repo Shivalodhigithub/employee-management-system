@@ -11,12 +11,12 @@ const AddEmployee = () => {
         password:'',
         salary:'',
         address:'',
-        image:'',
+        
         category_id:''
     })
     const [catData, SetcatData] = useState([])
     useEffect(() => {
-      axios.get('https://employee-management-system-e3di.onrender.com/auth/category').then((result) => {
+      axios.get('http://localhost:3000/auth/category').then((result) => {
         // console.log(result)
         if (result.data.Status) {
           SetcatData(result.data.categories)
@@ -46,10 +46,10 @@ const AddEmployee = () => {
       formData.append('password',employee.password)
       formData.append('salary',employee.salary)
       formData.append('address',employee.address)
-      formData.append('image',employee.image)
+       
       formData.append('category_id',employee.category_id)
        
-      axios.post('https://employee-management-system-e3di.onrender.com/auth/empolyee', formData).then((result) => {
+      axios.post('http://localhost:3000/auth/empolyee', formData).then((result) => {
         console.log(result)
         if(result.data.Status){
           navigate('/dashboard/employee')
@@ -93,10 +93,7 @@ const AddEmployee = () => {
     <input type="text" class="form-control" id="exampleInputAddress" onChange={(e)=>SetEmployee({...employee , address:e.target.value})}/>
   </div>
    
-  <div class="mb-3">
-    <label for="exampleInputImage" class="form-label">Select Image</label>
-    <input type="file" name='image' class="form-control" id="exampleInputImage" onChange={(e)=>SetEmployee({...employee , image:e.target.files[0]})}/>
-  </div>
+   {/* images  */}
   <div class="mb-3">
     <label for="exampleInputCategory" class="form-label">Select Category</label>
     <select name="category" id="category" className='form-select' onChange={(e)=>SetEmployee({...employee , category_id:e.target.value})}>
